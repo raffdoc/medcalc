@@ -1,9 +1,9 @@
 Package: medcalc
 Type: Package
-Title: What the package does (short line)
-Version: 1.0
+Title: An R package for miscelenious medical calculations.
+Version: 0.1-1
 Date: 2014-05-12
-Author: Who wrote it
-Maintainer: Who to complain to <yourfault@somewhere.net>
+Author: Rafik Margaryan
+Maintainer: Rafik margaryan <r.margaryan@sssup.it>
 Description: More about what it does (maybe more than one line)
 License: What license is it under?
