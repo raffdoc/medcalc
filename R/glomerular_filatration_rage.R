@@ -26,6 +26,7 @@ gfr_ckd <- function(gender="female|male",scr=NULL,scr.u="mg/dl"|"µmol/l",age=NU
 
 ## glomerular filtration rate by Cockcroft -Gault
 gfr_cg <- function(gender="female|male",age=NULL,weight=NULL,scr=NULL,scr.u="mg/dl"|"µmol/l"){
+        if (is.null(cause)) stop("Cause must be non-NULL")
         if (scr.u=="mg/dl"){scr <- scr*88.4} 
         if (gender=="female"){
                 gfr <- (1.04*weight*(140-age))/scr; return(gfr)
