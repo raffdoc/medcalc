@@ -1,4 +1,4 @@
-## Glomerular filatration rate by CKD-EPI
+#' Glomerular filatration rate by CKD-EPI
 gfr_ckd <- function(gender="female|male",scr=NULL,scr.u="mg/dl"|"µmol/l",age=NULL, race="black|white"){
   ## from A New Equation to Estimate Glomerular Filtration Rate
   ## Model should be reweritten as in article - Sun May  4 21:33:42 CEST 2014
