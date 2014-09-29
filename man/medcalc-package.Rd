@@ -18,23 +18,22 @@ Version: \tab 1.0\cr
 Date: \tab 2014-05-12\cr
 License: \tab What license is it under?\cr
 }
-~~ An overview of how to use the package, including the most important functions ~~
+Package to calculate different medical scores and estimates
 }
 \author{
-Who wrote it
+Rafik Margaryan
 
-Maintainer: Who to complain to <yourfault@somewhere.net>
-~~ The author and/or maintainer of the package ~~
+Maintainer: Rafik Margaryan <margaryan@ftgm.it>
+
 }
 \references{
-~~ Literature or other references for background information ~~
+Nashef et al. European system for cardiac operative risk evaluation (EuroSCORE). European journal of cardio-thoracic surgery (1999) vol. 16 (1) pp. 9-13
 }
-~~ Optionally other standard keywords, one per line, from file KEYWORDS in the R documentation directory ~~
+
 \keyword{ package }
 \seealso{
-~~ Optional links to other man pages, e.g. ~~
-~~ \code{\link[<pkg>:<pkg>-package]{<pkg>}} ~~
+
 }
 \examples{
-~~ simple examples of the most important functions ~~
+
 }
