@@ -14,7 +14,8 @@ EuroScore_I_Log  <- function(x,...) {
         # age variable scoring by age groups
         x$log.age <- NULL
         for(i in seq(along=x$age)) { 
-                if (x$age[i]< 59) { x$log.age[i] <- 0.0666354 } else {x$log.age[i] <- 0.0666354*(x$age[i]-58)}
+                if (x$age[i]< 59) { x$log.age[i] <- 0.0666354 } 
+                else {x$log.age[i] <- 0.0666354*(x$age[i]-58)}
         }
         #sex variable
         x$log.sex <- NULL
@@ -27,7 +28,9 @@ EuroScore_I_Log  <- function(x,...) {
         for (i in seq(along=x$cpd)) {
                 if(x$cpd[i]==1){x$log.cpd[i]<-0.4931341} else {x$log.cpd[i]<- 0}
         }
-        # Extracardiac arteriopathy (One or more of claudication, carotid occlusion  or >50% stenosis, previous or planned intervention on the abdominal aorta, limb arteries or carotids)
+        # Extracardiac arteriopathy (One or more of claudication, carotid occlusion  
+        # or >50% stenosis, previous or planned intervention on the abdominal aorta, 
+        #limb arteries or carotids)
         x$log.eca <- NULL
         for (i in seq(along=x$eca)) {
                 if(x$eca[i]==1){x$log.eca[i]<-0.6558917} else {x$log.eca[i]<- 0}

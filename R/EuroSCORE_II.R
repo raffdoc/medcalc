@@ -195,9 +195,9 @@ EuroScoreLog.II  <- function(x,...) {
                 else {x$log.sta[i]<- 0}
         }
         
-        # addative score output
+        # score output
         for (i in seq(along=x$log.age)){
-                x$log.es[i] <- exp(-5.324537+x$log.age[i]+x$log.sex[i]+x$log.ri[i]+
+                x$log.es[i] <- (exp(-5.324537+x$log.age[i]+x$log.sex[i]+x$log.ri[i]+
                                            x$log.eca[i]+x$log.pm[i]+x$log.pcs[i]+
                                            x$log.cld[i]+x$log.ae[i]+x$log.cps[i]+
                                            x$log.doi[i]+x$log.nyha[i]+x$log.ccs[i]+
@@ -209,7 +209,7 @@ EuroScoreLog.II  <- function(x,...) {
                                  x$log.doi[i]+x$log.nyha[i]+x$log.ccs[i]+
                                  x$log.lv.ef[i]+x$log.rmi[i]+x$log.ph[i]+
                                  x$log.em[i]+x$log.woi[i]+x$log.sta[i])
-                )
+                ))*100
         }
         #x<- data.frame(x,x$log.es)
         x.out <- subset(x,select=c(age,sex,ri,eca,pm,pcs,cld,ae,cps,doi,nyha,ccs,lv.ef,rmi,ph,em,woi,sta,log.es))
