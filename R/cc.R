@@ -6,7 +6,7 @@
 #' @return cc.out is vector of the creatinine clearance.
 #' @export
 
-cc <- function(age,weight,sex,scre){
+cretinine_clearance <- function(age,weight,sex,scre){
         if((length(age)==length(weight))==(length(sex)==length(scre))){
                 cc.out <- NULL
                 for(i in 1:length(age))
