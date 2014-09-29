@@ -7,23 +7,18 @@
 #' @export
 
 cc <- function(age,weight,sex,scre){
-        if(sum(!is.na(x = c(age,weight,sex,scre)))==length(c(age,weight,sex,scre))){
-                if((length(age)==length(weight))==(length(sex)==length(scre))){
-                        cc.out <- NULL
-                        for(i in 1:length(age))
-                                if(sex[i]==0){
-                                        cc.out[i] <- ((140-age[i])*weight[i])/72*scre[i]
-                                }
-                        else{
-                                cc.out[i] <- (((140-age[i])*weight[i])*0.85)/72*scre[i]
+        if((length(age)==length(weight))==(length(sex)==length(scre))){
+                cc.out <- NULL
+                for(i in 1:length(age))
+                        if(sex[i]==0){
+                                cc.out[i] <- ((140-age[i])*weight[i])/72*scre[i]
                         }
-                }
                 else{
-                        stop("All variables must be same lenght")}
+                        cc.out[i] <- (((140-age[i])*weight[i])*0.85)/72*scre[i]
+                }
         }
         else{
-                stop("There are NA values")
+                stop("All variables must be same lenght")
         }
-       
         return(cc.out)
 }
